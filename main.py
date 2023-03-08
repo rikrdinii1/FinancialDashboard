@@ -29,7 +29,7 @@ def plot_data(data, indicators, sync_axis=None):
         p = figure(x_axis_type='datetime',
                    tools='pan, wheel_zoom, box_zoom, reset, save', width=1000)
 
-    p.xaxis.mayor_label_orientation = math.pi / 4
+    p.xaxis.major_label_orientation = math.pi / 4
     p.grid.grid_line_alpha = 0.25
 
     p.segment(df.index, df.High, df.index, df.Low, color='black')
