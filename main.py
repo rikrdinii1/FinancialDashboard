@@ -24,7 +24,7 @@ def plot_data(data, indicators, sync_axis=None):
 
     if sync_axis is not None:
         p = figure(x_axis_type='datetime',
-                   tools='pan, wheel_zoom, box_zoom, reset, save', width=1000, x_range=sinc_axis)
+                   tools='pan, wheel_zoom, box_zoom, reset, save', width=1000, x_range=sync_axis)
     else:
         p = figure(x_axis_type='datetime',
                    tools='pan, wheel_zoom, box_zoom, reset, save', width=1000)
